@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 1rem;
+      color: white;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f0a500;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    h2 {
+      color: #222;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    /* Module 1: Placeholder Boxes */
+    #module1 {
+      padding: 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .placeholder-box {
+      display: inline-block;
+      width: 200px;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+      transition: transform 0.3s ease;
+    }
+
+    .placeholder-box:hover {
+      transform: scale(1.05);
+    }
+
+    .placeholder-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .placeholder-box p {
+      margin-top: 8px;
+      font-weight: bold;
+    }
+
+    /* Module 2: Flexbox Layout */
+    #module2 {
+      padding: 20px;
+      background-color: #eef6ff;
+    }
+
+    .flex-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .flex-item {
+      background-color: #fff;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      width: 200px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .flex-item:hover {
+      transform: scale(1.05);
+    }
+
+    .flex-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .flex-item p {
+      margin-top: 10px;
+      font-weight: 500;
+    }
+
+    /* Module 3: Responsive Box */
+    #module3 {
+      padding: 20px;
+      background-color: #f0fff4;
+    }
+
+    .responsive-box {
+      padding: 20px;
+      margin: 10px auto;
+      background-color: #d9fdd3;
+      border: 2px solid #91c788;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      text-align: center;
+      font-size: 1.1em;
+      transition: all 0.3s ease;
+    }
+
+    .responsive-box ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 15px;
+    }
+
+    .responsive-box li {
+      margin-bottom: 8px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .flex-item {
+        width: 100%;
+      }
+
+      .responsive-box {
+        background-color: #e6f9f1;
+        font-size: 1em;
+        padding: 15px;
+      }
+    }
+
+    /* Module 4: Transitions */
+    #module4 {
+      padding: 20px;
+      background-color: #fff0f5;
+      text-align: center;
+    }
+
+    .transition-button {
+      background-color: #6200ea;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      font-size: 1rem;
+    }
+
+    .transition-button:hover {
+      background-color: #3700b3;
+      transform: scale(1.05);
+    }
+
+    /* Module 5: HTML Table */
+    #module5 {
+      padding: 20px;
+      background-color: #fffaf0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #aaa;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #ffeaa7;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    /* Smooth Scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#module1">Placeholders</a>
+    <a href="#module2">Flexbox</a>
+    <a href="#module3">Responsive</a>
+    <a href="#module4">Transitions</a>
+    <a href="#module5">Table</a>
+  </nav>
+
+  <!-- Module 1: Placeholder Boxes -->
+  <section id="module1">
+    <h2>Module 1: Placeholder Boxes</h2>
+    <div class="placeholder-box">
+      <img src="1.png" alt="Image 1">
+      <p>Placeholder - Image 1</p>
+    </div>
+    <div class="placeholder-box">
+      <img src="8.png" alt="Image 2">
+      <p>Placeholder - Image 2</p>
+    </div>
+    <div class="placeholder-box">
+      <img src="9.png" alt="Image 3">
+      <p>Placeholder - Image 3</p>
+    </div>
+  </section>
+
+  <!-- Module 2: Flexbox Layout -->
+  <section id="module2">
+    <h2>Module 2: Flexbox Layout</h2>
+    <div class="flex-container">
+      <div class="flex-item">
+        <img src="1.png" alt="Image 1">
+        <p>Item 1</p>
+      </div>
+      <div class="flex-item">
+        <img src="8.png" alt="Image 2">
+        <p>Item 2</p>
+      </div>
+      <div class="flex-item">
+        <img src="9.png" alt="Image 3">
+        <p>Item 3</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Module 3: Responsive Box -->
+  <section id="module3">
+    <h2>Module 3: Responsive Box</h2>
+    <div class="responsive-box">
+      <p>This box is fully responsive. Try resizing your browser window or viewing this on a phone or tablet.</p>
+      <ul>
+        <li>📱 Mobile-friendly design</li>
+        <li>💻 Adapts to screen size</li>
+        <li>🧭 Smooth layout transitions</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Module 4: Transitions -->
+  <section id="module4">
+    <h2>Module 4: Transition Effects</h2>
+    <button class="transition-button">Button!</button>
+  </section>
+
+  <!-- Module 5: Table -->
+  <section id="module5">
+    <h2>Module 5: HTML Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Sanjivani</td>
+          <td>Shende</td>
+          <td>sanjivani@gmail.com</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Nupur</td>
+          <td>Verma</td>
+          <td>nupur@gmail.com</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Mohini</td>
+          <td>Mehta</td>
+          <td>mohini@gmail.com</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Aditi</td>
+          <td>Dani</td>
+          <td>aditi@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Sanjivani's Task. All rights reserved.
+  </footer>
+
+</body>
+</html>
